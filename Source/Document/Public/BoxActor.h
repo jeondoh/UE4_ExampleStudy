@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-
+#include "CustomStructs.h"
 #include "GameFramework/Actor.h"
 #include "BoxActor.generated.h"
 
@@ -44,6 +44,10 @@ public:
 	// 폭발 사운드
 	UPROPERTY(EditAnywhere, Category = "Setting")
 	class USoundBase* ExplosionSound;
+
+	// 구조체(테스트)
+	UPROPERTY(EditAnywhere)
+	FCustomStruct cs;
 	
 protected:
 	// Called when the game starts or when spawned
